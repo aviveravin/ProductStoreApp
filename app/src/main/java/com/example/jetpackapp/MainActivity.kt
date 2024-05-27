@@ -49,19 +49,25 @@ class MainActivity : ComponentActivity() {
                         unselectedIcon = Icons.Outlined.Home
                     ),
                     NavigationItem(
-                        title = "Profile",
+                        title = "Electronics",
                         route = Screens.Profile.route,
                         selectedIcon = Icons.Filled.Person,
                         unselectedIcon = Icons.Outlined.Person
                     ),
                     NavigationItem(
-                        title = "Notification",
+                        title = "Jewelery",
                         route = Screens.Notification.route,
                         selectedIcon = Icons.Filled.Notifications,
                         unselectedIcon = Icons.Outlined.Notifications
                     ),
                     NavigationItem(
-                        title = "Setting",
+                        title = "Men's clothing",
+                        route = Screens.Setting.route,
+                        selectedIcon = Icons.Filled.Settings,
+                        unselectedIcon = Icons.Outlined.Settings
+                    ),
+                    NavigationItem(
+                        title = "Women's clothing",
                         route = Screens.Setting.route,
                         selectedIcon = Icons.Filled.Settings,
                         unselectedIcon = Icons.Outlined.Settings

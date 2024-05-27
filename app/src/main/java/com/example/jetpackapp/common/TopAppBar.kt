@@ -46,7 +46,7 @@ fun TopBar(drawerState: DrawerState, currentRoute : String) {
                         drawerState.open()
                     }
                 })
-            Text(text = currentRoute, fontWeight = FontWeight.Bold, fontSize = 15.sp)
+            Text(text = currentRoute.uppercase(), fontWeight = FontWeight.Bold, fontSize = 15.sp)
             ContactProfile(modifier = Modifier)
         }
     }

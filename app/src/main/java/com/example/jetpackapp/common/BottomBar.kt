@@ -50,7 +50,7 @@ fun BottomBar(navController: NavHostController){
 
             Image(imageVector = Icons.Default.ShoppingCart, contentDescription = "",
                 modifier = Modifier.clickable {
-
+                        navController.navigate(Screens.Cart.route)
                 }
             )
         }

@@ -7,6 +7,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.example.jetpackapp.screens.CartScreen
 import com.example.jetpackapp.screens.HomeScreen
 import com.example.jetpackapp.screens.NotificationScreen
 import com.example.jetpackapp.screens.ProductDetailScreen
@@ -36,7 +37,10 @@ fun SetupNavGraph(
             arguments = listOf(navArgument("productId") { type = NavType.IntType })
         ){ backStackEntry ->
             val productId = backStackEntry.arguments?.getInt("productId") ?: return@composable
-            ProductDetailScreen(productId)
+            ProductDetailScreen(innerPadding = innerPadding, productId)
+        }
+        composable(Screens.Cart.route){
+            CartScreen(innerPadding = innerPadding)
         }
     }
 }

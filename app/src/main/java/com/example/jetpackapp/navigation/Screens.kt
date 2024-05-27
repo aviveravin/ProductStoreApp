@@ -6,4 +6,5 @@ sealed class Screens(var route: String) {
     object Notification: Screens("notification")
     object Setting: Screens("setting")
     object ProductDetail: Screens("productdetail")
+    object Cart: Screens("cart")
 }
