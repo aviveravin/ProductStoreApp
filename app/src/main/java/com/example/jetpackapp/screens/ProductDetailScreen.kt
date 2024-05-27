@@ -2,6 +2,7 @@ package com.example.jetpackapp.screens
 
 import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -94,7 +95,8 @@ fun ProductDetailScreen(productId: Int) {
                 ) {
                     ElevatedButton(
                         onClick = { /* Handle checkout */ },
-                        modifier = Modifier.fillMaxWidth()
+                        modifier = Modifier
+                            .fillMaxWidth()
                             .padding(8.dp),
                         colors = ButtonDefaults.buttonColors(Color.Black)
                     ) {
@@ -125,5 +127,7 @@ fun ProductDetailScreen(productId: Int) {
 @Preview
 @Composable
 fun ProductDetail(){
+    Box {
 
+    }
 }
